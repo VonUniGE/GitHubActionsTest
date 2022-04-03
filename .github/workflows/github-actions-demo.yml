@@ -4,4 +4,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: rustc hello.rs
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Compile hello.rs
+        run: rustc hello.rs
+      - name: Run hello
+        run: ./hello
