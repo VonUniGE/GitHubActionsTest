@@ -4,4 +4,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: curl https://www.unige.ch
+      - run: rustc hello.rs
